@@ -191,4 +191,7 @@
         .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
             display: none;
         }
-        
+.popupImage { 
+	max-width: 100%; 
+	max-height: auto; 
+}
