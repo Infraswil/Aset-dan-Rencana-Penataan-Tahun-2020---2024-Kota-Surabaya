@@ -303,7 +303,7 @@
                         <td class="visible-with-data" id="TANAH_1"colspan="2"><strong>Status Tanah</strong><br />' + (feature.properties['TANAH_1'] !== null ? autolinker.link(feature.properties['TANAH_1'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td class="visible-with-data" id="Gambar"colspan="2"><strong>Gambar Penataan</strong><br />' + (feature.properties['Gambar'] !== null ? '<img src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td class="visible-with-data" id="Gambar"colspan="2"><strong>Gambar Penataan</strong><br />' + (feature.properties['Gambar'] !== null ? '<img src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '" '+ 'class=popupImage' +'>' : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
