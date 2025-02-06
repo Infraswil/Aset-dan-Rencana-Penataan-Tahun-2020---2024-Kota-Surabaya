@@ -458,3 +458,12 @@
         </script>
     </body>
 </html>
+<style>
+  .leaflet-popup-content img {
+    max-width: 100%; /* Membatasi gambar agar sesuai dengan lebar pop-up */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+  }
+  .leaflet-popup-content {
+    overflow: auto; /* Menambahkan scroll jika konten terlalu besar */
+  }
+</style>
